@@ -18,7 +18,7 @@ io.on('connection', (socket) => {
       });
     });
   });
-
-http.listen(800,()=>{
+const port = process.env.PORT || 800
+http.listen(port,()=>{
     console.log('server listen 800 port')
 })
